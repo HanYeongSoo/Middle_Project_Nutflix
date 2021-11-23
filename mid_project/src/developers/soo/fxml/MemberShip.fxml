@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="744.0" prefWidth="416.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="developers.soo.Controller.MemController">
+   <children>
+      <Label layoutX="38.0" layoutY="72.0" style="-fx-text-fill: white;" text="회원가입">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Label layoutX="38.0" layoutY="131.0" style="-fx-text-fill: white;" text="아이디">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label layoutX="39.0" layoutY="220.0" style="-fx-text-fill: white;" text="비밀번호">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label layoutX="38.0" layoutY="309.0" style="-fx-text-fill: white;" text="이메일">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label layoutX="38.0" layoutY="397.0" style="-fx-text-fill: white;" text="닉네임">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label layoutX="38.0" layoutY="495.0" style="-fx-text-fill: white;" text="비밀번호 찾기 질문/답변">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <TextField fx:id="fxId" layoutX="38.0" layoutY="153.0" prefHeight="52.0" prefWidth="340.0" promptText="아이디를 입력해 주세요" style="-fx-border-radius: 5px; -fx-background-color: #686868;" />
+      <PasswordField fx:id="fxPwd" layoutX="38.0" layoutY="242.0" prefHeight="52.0" prefWidth="340.0" promptText="비밀번호를 입력해 주세요" style="-fx-background-color: #686868;" />
+      <TextField fx:id="fxEmail" layoutX="38.0" layoutY="331.0" prefHeight="52.0" prefWidth="340.0" promptText="이메일을 입력해 주세요" style="-fx-background-color: #686868;" />
+      <TextField fx:id="fxName" layoutX="38.0" layoutY="419.0" prefHeight="52.0" prefWidth="340.0" promptText="닉네임을 입력해 주세요" style="-fx-background-color: #686868;" />
+      <ComboBox fx:id="fxQuestion" layoutX="38.0" layoutY="516.0" prefHeight="52.0" prefWidth="340.0" promptText="질문을 선택해 주세요" style="-fx-background-color: #686868;" />
+      <TextField fx:id="fxAnswer" layoutX="38.0" layoutY="582.0" prefHeight="52.0" prefWidth="340.0" promptText="답변을 입력해 주세요" style="-fx-background-color: #686868;" />
+      <Button layoutX="38.0" layoutY="654.0" mnemonicParsing="false" onAction="#onSave" prefHeight="52.0" prefWidth="158.0" style="-fx-background-color: #dd0b12; -fx-text-fill: white;" text="저장">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="fxClose" layoutX="220.0" layoutY="654.0" mnemonicParsing="false" onAction="#onClose" prefHeight="52.0" prefWidth="158.0" style="-fx-background-color: #dd0b12; -fx-text-fill: white;" text="닫기">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <ImageView fx:id="fxImageView" fitHeight="52.0" fitWidth="99.0" layoutX="159.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

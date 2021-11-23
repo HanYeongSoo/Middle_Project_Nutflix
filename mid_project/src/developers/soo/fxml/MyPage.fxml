@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="416.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="developers.soo.Controller.MyPageController">
+   <children>
+      <Button layoutX="33.0" layoutY="457.0" mnemonicParsing="false" onAction="#onClose" prefHeight="52.0" prefWidth="340.0" style="-fx-background-color: #dd0b12; -fx-text-fill: white;" text="나가기" />
+      <Button layoutX="33.0" layoutY="214.0" mnemonicParsing="false" onAction="#onModify" prefHeight="52.0" prefWidth="340.0" style="-fx-background-color: #686868; -fx-text-fill: white;" text="내 정보 수정">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button layoutX="33.0" layoutY="322.0" mnemonicParsing="false" onAction="#onView" prefHeight="52.0" prefWidth="340.0" style="-fx-background-color: #686868; -fx-text-fill: white;" text="예매한 정보 확인 및 취소">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <ImageView fx:id="fxImageView" fitHeight="52.0" fitWidth="99.0" layoutX="156.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="32.0" layoutY="100.0" style="-fx-text-fill: white;" text="반갑습니다!">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="100.0" style="-fx-background-color: black; -fx-text-fill: white;" text="님!">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="fxId2" layoutX="187.0" layoutY="100.0" prefHeight="19.0" prefWidth="83.0" style="-fx-text-fill: white;" text="Label">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="187.0" style="-fx-text-fill: #c1c1c0;" text="여러가지 정보가 수정 가능합니다." />
+      <Label layoutX="33.0" layoutY="295.0" style="-fx-text-fill: #c1c1c0;" text="예매정보와 예매취소가 가능합니다." />
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="848.0" prefWidth="450.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="developers.hj.Controller.MovieController">
+   <children>
+      <Label layoutX="55.0" layoutY="62.0" prefHeight="45.0" prefWidth="189.0" style="-fx-text-fill: white;" text="영화 정보 입력 창">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="150.0" style="-fx-text-fill: #c1c1c0;" text="영화 이름">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="691.0" style="-fx-text-fill: #c1c1c0;" text="등급">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="378.0" style="-fx-text-fill: #c1c1c0;" text="상영시간">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label layoutX="57.0" layoutY="457.0" prefHeight="15.0" prefWidth="52.0" style="-fx-text-fill: #c1c1c0;" text="개봉 일">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="532.0" style="-fx-text-fill: #c1c1c0;" text="감독">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="300.0" style="-fx-text-fill: #c1c1c0;" text="국가">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="224.0" prefHeight="11.0" prefWidth="65.0" style="-fx-text-fill: #c1c1c0;" text="영화 정보">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label layoutX="54.0" layoutY="615.0" prefHeight="16.0" prefWidth="52.0" style="-fx-text-fill: #c1c1c0;" text="출연진">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField fx:id="movieName" layoutX="56.0" layoutY="173.0" prefHeight="42.0" prefWidth="340.0" style="-fx-background-color: #686868;" />
+      <TextField fx:id="movieActor" layoutX="56.0" layoutY="640.0" prefHeight="42.0" prefWidth="340.0" style="-fx-background-color: #686868;" />
+      <TextField fx:id="movieDir" layoutX="56.0" layoutY="554.0" prefHeight="42.0" prefWidth="340.0" style="-fx-background-color: #686868;" />
+      <TextField fx:id="movieRt" layoutX="55.0" layoutY="399.0" prefHeight="42.0" prefWidth="340.0" style="-fx-background-color: #686868;" />
+      <TextField fx:id="movieNation" layoutX="55.0" layoutY="322.0" prefHeight="42.0" prefWidth="340.0" style="-fx-background-color: #686868;" />
+      <TextField fx:id="movieInfo" layoutX="55.0" layoutY="245.0" prefHeight="42.0" prefWidth="340.0" style="-fx-background-color: #686868;" />
+      <TextField fx:id="movieRate" layoutX="56.0" layoutY="714.0" prefHeight="42.0" prefWidth="340.0" style="-fx-background-color: #686868;" />
+      <Button layoutX="240.0" layoutY="780.0" mnemonicParsing="false" onAction="#movieSave" prefHeight="45.0" prefWidth="114.0" style="-fx-background-color: #dd0b12; -fx-text-fill: white;" text="저장" />
+      <DatePicker fx:id="movieRd" layoutX="56.0" layoutY="481.0" prefHeight="42.0" prefWidth="340.0" style="-fx-background-color: #686868;" />
+      <Button fx:id="close" layoutX="99.0" layoutY="780.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="114.0" style="-fx-background-color: #dd0b12; -fx-text-fill: white;" text="닫기" />
+      <ImageView fitHeight="52.0" fitWidth="99.0" layoutX="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../미들프로젝트%20자료/nutflix.png" />
+         </image></ImageView>
+      <Label layoutX="67.0" layoutY="107.0" prefHeight="15.0" prefWidth="199.0" style="-fx-text-fill: #c1c1c0;" text="새로 저장 할 영화를 입력해 주세요.">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
